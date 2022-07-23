@@ -18,15 +18,15 @@ $lang2 = LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
 
         <div class="content">
             <ul class="links">
-                <li> <a href="/">Home</a> </li>
-                <li> <a href="#products">About</a></li>
-                <li> <a href="#contact">Vision</a></li>
-                <li> <a href="#contact">Values</a></li>
-                <li> <a href="#contact">Targets</a></li>
-                <li> <a href="#contact">Services</a></li>
-                <li> <a href="#contact">News</a></li>
-                <li> <a href="#contact">Gallery</a></li>
-                <li> <a href="#contact">Contact</a></li>
+                <li> <a href="/">{{ __('index.1') }}</a> </li>
+                <li> <a href="#products">{{ __('index.2') }}</a></li>
+                <li> <a href="#contact">{{ __('index.3') }}</a></li>
+                <li> <a href="#contact">{{ __('index.4') }}</a></li>
+                <li> <a href="#contact">{{ __('index.5') }}</a></li>
+                <li> <a href="#contact">{{ __('index.6') }}</a></li>
+                <li> <a href="#contact">{{ __('index.7') }}</a></li>
+                <li> <a href="#contact">{{ __('index.8') }}</a></li>
+                <li> <a href="#contact">{{ __('index.9') }}</a></li>
                 <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}"><img
                             src="{{ asset('img/ar.png') }}" alt="lang-icon"></a></li>
             </ul>
