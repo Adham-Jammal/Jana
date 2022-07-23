@@ -498,6 +498,9 @@
     .hero-div .opening-hours h3{
         font-size: 1.8rem;
     }
+    .hero-div .unified-number p{
+        margin: 20px 0 15px;
+    }
     .hero-div .unified-number span{
         font-size: 1.2rem;
     }

@@ -52,11 +52,4 @@ return [
     "49" => "Jana medical company is a Saudi company established in the city of Riyadh which consists of a group of companies united under the name (Jana medical company), it was launched in the year of 2014, and one of its most prominent and largest investment is in the medical sector specifically in the field of medical supplies" ,
     "50" => "It is a logistics services company that works to create specialized and improved solutions for supply chains in accordance with international and advanced programs and systems, and enjoys great flexibility to face all possible operations and obstacles, through a distinguished and trained staff to provide the best service to " ,
     "51" => "Read more" ,
-    "" => "" ,
-    "" => "" ,
-    "" => "" ,
-    "" => "" ,
-
-
-
 ];

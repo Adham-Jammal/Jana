@@ -42,7 +42,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
+                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
+                                </h1>
                                 <a href="#" class="slider-button">{{ __('index.12') }}</a>
                             </div>
                         </div>
@@ -53,7 +54,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
+                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
+                                </h1>
                                 <a href="#" class="slider-button">{{ __('index.12') }}</a>
                             </div>
                         </div>
@@ -64,7 +66,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
+                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
+                                </h1>
                                 <a href="#" class="slider-button">{{ __('index.12') }}</a>
                             </div>
                         </div>
