@@ -1,0 +1,106 @@
+footer{
+    background: #02362E;
+    padding: 50px 0;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-content div{
+    width: 48%;
+
+}
+footer .footer-content .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-content .logo img{
+    width: 70%;
+}
+footer .footer-content .text-content ul{
+    list-style: none;
+}
+footer .footer-content .text-content ul li{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+footer .footer-content .text-content ul li img{
+    margin-right: 20px;
+    width: 20px;
+}
+footer .footer-content .text-content .social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-end;
+}
+footer .footer-content .text-content .social-icons i{
+    margin-right: 20px;
+    color: var(--white);
+    font-size: 2rem;
+}
+hr {
+    margin: 50px 0 20px;
+    border: none;
+    height: 3px;
+    color: #fff;
+    background-color: #fff;
+}
+footer .rights-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+footer .rights-content .vision-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .rights-content .vision-logo img{
+    width: 70%;
+}
+footer .rights-content span{
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+@media (max-width:768px){
+    footer .footer-content .text-content ul li{
+        font-size: 1.2rem;
+    }
+    footer .footer-content .text-content ul li img{
+        margin-right: 5px;
+        width: 15px;
+    }
+    footer .footer-content .logo img{
+        width: 100%;
+    }
+    .rights-content .text-content{
+        width: 110%;
+    }
+    footer .rights-content span{
+        font-size: 1rem;
+        color: var(--white);
+        margin-left: 10px;
+        text-align: left;
+    }
+    footer .rights-content .vision-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    footer .rights-content .vision-logo img{
+        width: 55%;
+    }
+}

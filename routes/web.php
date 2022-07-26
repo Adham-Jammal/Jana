@@ -22,7 +22,8 @@ Route::group(
 
 
         Route::get('/'         ,[PageController::class,'index'])->name('index');
-        Route::post('/contact' ,[PageController::class,'contact'])->name('contact');
+        Route::get('/contact-us' ,[PageController::class,'contactUs'])->name('contactUs');
+        Route::get('/investments' ,[PageController::class,'investments'])->name('investments');
         Route::post('/request' ,[PageController::class,'request'])->name('request');
 
     });Route::get('/clear', function() {
@@ -31,9 +32,9 @@ Route::group(
         Artisan::call('config:clear');
         Artisan::call('config:cache');
         Artisan::call('view:clear');
-     
+
         return "Cleared!";
-     
+
      });
 
 

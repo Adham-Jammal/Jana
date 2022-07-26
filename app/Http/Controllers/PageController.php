@@ -11,6 +11,14 @@ class PageController extends Controller
     {
         return view('index');
     }
+    public function investments()
+    {
+        return view('investments');
+    }
+    public function contactUs()
+    {
+        return view('contact');
+    }
 
     public function contact(Request $request)
     {

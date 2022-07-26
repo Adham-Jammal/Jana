@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope');
 @font-face {
     font-family: English-font;
-    src: url("/fonts/HelveticaNeueLT\ Arabic\ 55\ Roman.ttf");
+    src: url("/fonts/Manrope-VariableFont_wght.ttf");
   }
 *{
     font-family: 'Manrope';
@@ -19,6 +19,7 @@
     background-position: center;
 }
 .hero .slider-text{
+    font-family: impact;
     color: #fff;
     font-weight: 400;
     font-size:8rem;
@@ -31,6 +32,26 @@
     font-weight: 500;
     padding: 10px 30px;
     border-radius: 100px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    background: #ffffff38;
+    padding: 14px 18px !important ;
+    border-radius: 50%;
+    left: 5%;
+    top: 45%;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    background: #ffffff38;
+    padding: 14px 18px !important ;
+    border-radius: 50%;
+    right: 5%;
+    top: 45%;
 }
 .hero-div{
     position: relative;
@@ -132,7 +153,7 @@
 }
 /* Vision-Message */
 .vision-message{
-    background: url(/img/logo.png);
+    background: url(/img/logo.svg);
     position: relative;
     background-position: center right -40px;
     background-repeat: no-repeat;
@@ -264,14 +285,30 @@
     padding: 75px 0;
     background: linear-gradient(62.33deg, #299E83 -4.32%, #04324A 64.54%, #04324A 99.11%);
 }
+.how-jana .title{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .how-jana h2{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: var(--white);
-    display: block;
     text-align: center;
     padding-bottom: 5px;
+    display: inline-block;
+    margin: 0 auto;
     position: relative;
+}
+.how-jana h2::before{
+    content: '';
+    position:absolute;
+    width: 35%;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: var(--main-color);
 }
 .how-jana .boxes{
     display: flex;
@@ -357,6 +394,10 @@
 /* Investment */
 .investment {
     position: relative;
+    background: url(/img/values-background.png);
+    padding: 50px 0;
+    background-position: center;
+    background-size: contain;
 }
 .investment .image-content img{
     width: 100%;
@@ -437,10 +478,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 0px 100px 0px;
 }
-.our-success-investments .card a{
-    color: #178D7B;
-}
-.our-success-investments .card img{
+.our-success-investments .card .investment-logo {
     padding: 4px;
     width: 240px;
     height: 74px;
@@ -455,11 +493,27 @@
     font-size: 1.4rem;
     font-weight: 400;
 }
+.our-success-investments .card a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #178D7B;
+    font-size: 1.6rem;
+}
+.our-success-investments .card a img{
+    width: 25px;
+    margin: 0 5px;
+}
 
 
 
 /* Responsive */
-
+@media (min-width:1200px){
+    .how-jana .boxes-1 .box,.how-jana .boxes{
+        width: 64%;
+        margin: 0 auto;
+    }
+}
 @media (max-width:1200px){
 
 }
@@ -480,7 +534,7 @@
         width: 90%;
         flex-direction: column;
         align-items: flex-start;
-        background-image: url(/img/logo.png);
+        background-image: url(/img/logo.svg);
         background-position: center right;
         background-repeat: no-repeat;
         background-size: auto;
@@ -518,6 +572,7 @@
     padding-left: 15px;
 }
 .about-us .text-content p{
+    margin-top: 5px;
     font-size: 1.2rem;
 }
 .vision-message{
@@ -558,7 +613,9 @@
 .targets .text-content ul li{
     font-size: 1.2rem;
 }
-
+.how-jana h2{
+    font-size: 1.5rem;
+}
 .how-jana .boxes .box,
 .how-jana .boxes-1 .box{
     padding: 0 10px;
@@ -610,7 +667,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 0px 30px 0px;
 }
-.our-success-investments .card img{
+.our-success-investments .card .investment-logo {
     padding: 4px;
     width: 100px;
     height: 40px;
@@ -630,8 +687,19 @@
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
+.our-success-investments .card a{
+    font-size: 1.2rem;
+}
+.our-success-investments .card a img{
+    width: 15px;
+}
 }
 /* ************* */
 @media (max-width:500px){
 
 }
+
+
+
+
+

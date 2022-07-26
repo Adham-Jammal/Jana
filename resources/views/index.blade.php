@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/' . LaravelLocalization::getCurrentLocale() . '-style.css') }}">
+@stop
+
 @section('main')
     <section class="hero">
         <div class="section-carousel">
@@ -9,8 +13,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
+                                <h1 class="slider-text">{{ __('index.10') }} <Br> {{ __('index.11') }}</h1>
+                                <a href="/contact-us" class="slider-button">{{ __('index.12') }}</a>
                             </div>
                         </div>
                     </div>
@@ -20,55 +24,21 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
+                                <h1 class="slider-text">{{ __('index.10') }} <Br> {{ __('index.11') }}</h1>
+                                <a href="#about_us" class="slider-button">{{ __('index.2') }}</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url(/img/hero-3.png); ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong></h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="carousel-item" style="background-image: url(/img/hero-4.png); ">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
+                                <h1 class="slider-text">{{ __('index.10') }} <Br> {{ __('index.11') }}
                                 </h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url(/img/hero-5.png); ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
-                                </h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url(/img/hero-6.png); ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center text-white">
-                                <h1 class="slider-text"><strong>{{ __('index.10') }} <Br> {{ __('index.11') }}</strong>
-                                </h1>
-                                <a href="#" class="slider-button">{{ __('index.12') }}</a>
+                                <a href="#investments" class="slider-button">{{ __('index.3') }}</a>
                             </div>
                         </div>
                     </div>
@@ -88,7 +58,7 @@
                 </div>
             </div>
             <div class="logo-image">
-                <img src="{{ asset('img/logo.png') }}" alt="Logo">
+                <img src="{{ asset('img/logo.svg') }}" alt="Logo">
             </div>
             <div class="unified-number">
                 <div class="content">
@@ -104,7 +74,7 @@
     </section>
 
     {{-- About Us --}}
-    <section class="about-us">
+    <section class="about-us" id="about_us">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 image-content">
@@ -131,7 +101,7 @@
                     <p>{{ __('index.24') }}</p>
                 </div>
                 <div class="col-md-2 image-content">
-                    {{-- <img src="{{asset('img/logo.png')}}" alt="logo"> --}}
+                    {{-- <img src="{{asset('img/logo.svg')}}" alt="logo"> --}}
                 </div>
             </div>
         </div>
@@ -142,7 +112,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 image-content">
-                    <img src="{{ asset('img/values-image.png') }}" alt="about-us">
+                    <img src="{{ asset('img/values-image-'.LaravelLocalization::getCurrentLocale().'.png') }}" alt="about-us">
                 </div>
                 <div class="col-7 text-content">
                     <h2>{{ __('index.25') }}</h2>
@@ -176,7 +146,7 @@
     </section>
     <section class="how-jana">
         <div class="container">
-            <h2>{{ __('index.32') }}</h2>
+            <div class="title"><h2>{{ __('index.32') }}</h2></div>
             <div class="boxes">
                 <div class="box box-1">
                     <p>
@@ -213,7 +183,7 @@
     </section>
 
     {{-- Services --}}
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="row">
 
@@ -235,7 +205,7 @@
     </section>
 
     {{-- Investment --}}
-    <section class="investment">
+    <section class="investment" id="investments">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 image-content">
@@ -260,24 +230,24 @@
             </div>
             <div class="cards">
                 <div class="card">
-                    <img src="{{ asset('img/investment-image-1.png') }}" alt="investment-image-1">
-                    <p> {{ __('index.46') }}<a href="#">{{ __('index.51') }}</a> </p>
+                    <img src="{{ asset('img/investment-image-1.png') }}" class="investment-logo" alt="investment-image-1">
+                    <p> {{ __('index.53') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card">
-                    <img src="{{ asset('img/investment-image-2.png') }}" alt="investment-image-2">
-                    <p>{{ __('index.47') }}<a href="#">{{ __('index.51') }}</a> </p>
+                    <img src="{{ asset('img/investment-image-2.png') }}" class="investment-logo"  alt="investment-image-2">
+                    <p>{{ __('index.55') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card">
-                    <img src="{{ asset('img/investment-image-3.png') }}" alt="investment-image-3">
-                    <p>{{ __('index.48') }}<a href="#">{{ __('index.51') }}</a> </p>
+                    <img src="{{ asset('img/investment-image-3.png') }}" class="investment-logo" alt="investment-image-3">
+                    <p>{{ __('index.57') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card">
-                    <img src="{{ asset('img/investment-image-4.png') }}" alt="investment-image-4">
-                    <p>{{ __('index.49') }}<a href="#">{{ __('index.51') }}</a> </p>
+                    <img src="{{ asset('img/investment-image-4.png') }}" class="investment-logo" alt="investment-image-4">
+                    <p>{{ __('index.59') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card">
-                    <img src="{{ asset('img/investment-image-5.png') }}" alt="investment-image-5">
-                    <p>{{ __('index.50') }}<a href="#">{{ __('index.51') }}</a> </p>
+                    <img src="{{ asset('img/investment-image-5.png') }}" class="investment-logo" alt="investment-image-5">
+                    <p>{{ __('index.61') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
             </div>
         </div>

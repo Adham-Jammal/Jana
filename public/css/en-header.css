@@ -50,12 +50,12 @@
   .content .logo::after{
     content: '';
     height: 0.01rem;
-    width: 100px;
+    width: 180px;
     background: var(--white);
     position: absolute;
     display: block;
     z-index: -1;
-    right: -100%;
+    right: -150%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -108,11 +108,12 @@
   .content .links li label{
     position: relative;
     color: white!important;
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     font-weight: 100;
     padding: 25px 18px;
     transition: all 0.3s ease;
     text-decoration: none;
+    text-transform: uppercase;
     z-index: 2;
   }
   .header-fix .content .links li a{
@@ -270,9 +271,9 @@
       transition: all 0.3s ease;
     }
     nav #show-menu:checked ~ .content .links{
-      background: url(/img/background.png);
       background-color:#6b6460;
       top: 122px;
+      height: 100vh;
       left: 0%;
       z-index: 3;
     }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="logo">
-                <img src="{{ asset('img/footer-logo.png') }}" alt="Logo">
+                <img src="{{ asset('img/footer-logo.svg') }}" alt="Logo">
             </div>
             <div class="text-content">
                 <ul>
@@ -25,7 +25,7 @@
                 <span>© 2022 Jana Investment Holding Company , All rights reserved.</span>
             </div>
             <div class="vision-logo">
-                <img src="{{ asset('img/vision-logo.png') }}" alt="Logo">
+                <img src="{{ asset('img/vision-logo.svg') }}" alt="Logo">
             </div>
         </div>
     </div>
