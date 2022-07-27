@@ -249,6 +249,7 @@
         }
         .wrapper .menu-icon .burger{
             width: 25px;
+            transform: scaleX(-1);
         }
         nav .content .links::before{
             display: none;
