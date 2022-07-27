@@ -286,13 +286,13 @@
     background: linear-gradient(62.33deg, #299E83 -4.32%, #04324A 64.54%, #04324A 99.11%);
 }
 .how-jana .title{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .how-jana h2{
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 500;
     color: var(--white);
     text-align: center;
@@ -308,7 +308,7 @@
     left: 0;
     bottom: -5px;
     height: 2px;
-    background-color: var(--main-color);
+    background-color: #025F4E;
 }
 .how-jana .boxes{
     display: flex;
@@ -317,7 +317,7 @@
 }
 .how-jana .boxes .box{
     width: 48%;
-    padding: 40px;
+    padding: 40px 20px;
     min-height: 150px;
     display: flex;
     align-items: center;
@@ -330,7 +330,7 @@
     margin: 20px 0;
 }
 .how-jana .boxes-1 .box{
-    padding: 40px;
+    padding: 40px 100px;
     width: 100%;
     background: linear-gradient(90deg, #022B45 0%, #25927C 100%);
     min-height: 150px;
@@ -348,7 +348,7 @@
     border-radius: 25px;
 }
 .how-jana p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--white);
     text-align: center;
 }
@@ -510,7 +510,7 @@
 /* Responsive */
 @media (min-width:1200px){
     .how-jana .boxes-1 .box,.how-jana .boxes{
-        width: 64%;
+        width: 70%;
         margin: 0 auto;
     }
 }
@@ -525,6 +525,9 @@
 @media (max-width:768px){
     .hero{
         margin-bottom: -80px;
+    }
+    .carousel-item{
+        background-size: cover;
     }
     .hero .slider-text{
         margin-bottom: 30px;

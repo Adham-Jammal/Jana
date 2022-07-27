@@ -2,8 +2,7 @@
 @font-face {
     font-family: Arabic-font;
     src: url("/fonts/Ubuntu\ Arabic\ Bold.ttf");
-    src: url("/fonts/Ubuntu\ Arabic\ Bold.ttf");
-
+    src: url("/fonts/Ubuntu\ Arabic\ Regular.otf");
   }
 *{
     direction: rtl;
