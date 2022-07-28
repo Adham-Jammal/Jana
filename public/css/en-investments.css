@@ -37,9 +37,7 @@
     border: 3px solid #025F4E;
 }
 .our-success-investments .card p{
-    text-align: justify;
-    text-align-last: center;
-    word-break: break-all;
+    text-align: center;
     margin-top: 15px;
     font-size: 1.4rem;
     font-weight: 400;
@@ -91,7 +89,6 @@
 }
 .our-success-investments .card p{
     margin-top: 20px;
-    text-align: justify;
     font-size: 1.2rem;
     font-weight: 400;
 }

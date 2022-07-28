@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url(/img/hero-2.png);@media (max-width:768px){background-image: url(/img/hero-mob-2.png);}  ">
+                <div class="carousel-item" style="background-image: url(/img/hero-2.png);@media (max-width:768px){background-image: url(/img/hero-2.png);}  ">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">

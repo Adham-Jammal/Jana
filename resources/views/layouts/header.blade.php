@@ -26,7 +26,7 @@ $lang2 = LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
                 <li> <a data-link="#gallery">{{ __('index.6') }}</a></li>
                 <li> <a href="/contact-us">{{ __('index.7') }}</a></li>
                 <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}"><img
-                            src="{{ asset('img/'.$lang2.'.png') }}" alt="lang-icon"></a></li>
+                            src="{{ asset('img/'.$lang2.'.svg') }}" alt="lang-icon"></a></li>
             </ul>
         </div>
     </nav>

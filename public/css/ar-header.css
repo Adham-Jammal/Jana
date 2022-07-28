@@ -273,7 +273,7 @@
     }
     nav #show-menu:checked ~ .content .links{
       background-color:#6b6460;
-      top: 122px;
+      top: 110px;
       height: 100vh;
       right: 0%;
       z-index: 3;
