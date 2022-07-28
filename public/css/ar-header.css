@@ -73,7 +73,7 @@
   }
 
   .content .logo a img{
-    width: 140px;
+    width: 180px;
     background: #6b6460;
   }
   .header-fix .content .logo a{
@@ -360,4 +360,25 @@
       padding-right: 30px;
     }
   }
+
+  /*Scroll Top*/
+  #scroll_top{
+    position: fixed;
+    left: -60px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 800;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+#scroll_top:hover{
+    background-color: #025F4E;
+}
 

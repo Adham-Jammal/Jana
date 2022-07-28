@@ -9,7 +9,7 @@
         <div class="section-carousel">
             <div class="carousel-single owl-carousel owl-drag owl-theme">
 
-                <div class="carousel-item" style="background-image: url(/img/hero-1.png); ">
+                <div class="carousel-item" style="background-image: url(/img/hero-1.png); @media (max-width:768px){background-image: url(/img/hero-mob-1.png);} ">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url(/img/hero-2.png); ">
+                <div class="carousel-item" style="background-image: url(/img/hero-2.png);@media (max-width:768px){background-image: url(/img/hero-mob-2.png);}  ">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
@@ -32,7 +32,7 @@
                 </div>
 
 
-                <div class="carousel-item" style="background-image: url(/img/hero-4.png); ">
+                <div class="carousel-item" style="background-image: url(/img/hero-4.png);@media (max-width:768px){background-image: url(/img/hero-mob-3.png);}  ">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center text-white">
@@ -46,7 +46,7 @@
 
             </div>
         </div>
-        <div class="hero-div">
+        <div class="hero-div" data-aos="fade-up" data-aos-duration="500">
             <div class="opening-hours">
                 <div class="content">
                     <p>{{ __('index.13') }}</p>
@@ -77,10 +77,10 @@
     <section class="about-us" id="about_us">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 image-content">
+                <div class="col-md-5 image-content" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{ asset('img/about-image.png') }}" alt="about-us">
                 </div>
-                <div class="col-md-7 text-content">
+                <div class="col-md-7 text-content" data-aos="fade-left" data-aos-duration="1000">
                     <h2>{{ __('index.19') }}</h2>
                     <p>
                         <img src="{{ asset('img/about-image.png') }}" alt="about-us" id="about_mobile_image">
@@ -95,10 +95,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 text-content">
-                    <h3>{{ __('index.21') }}</h3>
-                    <p>{{ __('index.22') }}</p>
-                    <h3>{{ __('index.23') }}</h3>
-                    <p>{{ __('index.24') }}</p>
+                    <h3 data-aos="fade-up" data-aos-duration="1000">{{ __('index.21') }}</h3>
+                    <p data-aos="fade-up" data-aos-duration="1000">{{ __('index.22') }}</p>
+                    <h3 data-aos="fade-up" data-aos-duration="1000">{{ __('index.23') }}</h3>
+                    <p data-aos="fade-up" data-aos-duration="1000">{{ __('index.24') }}</p>
                 </div>
                 <div class="col-md-2 image-content">
                     {{-- <img src="{{asset('img/logo.svg')}}" alt="logo"> --}}
@@ -111,10 +111,10 @@
     <section class="values">
         <div class="container">
             <div class="row">
-                <div class="col-5 image-content">
+                <div class="col-5 image-content" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{ asset('img/values-image-'.LaravelLocalization::getCurrentLocale().'.png') }}" alt="about-us">
                 </div>
-                <div class="col-7 text-content">
+                <div class="col-7 text-content" data-aos="fade-left" data-aos-duration="1000">
                     <h2>{{ __('index.25') }}</h2>
                     <p>
                         {{ __('index.26') }}
@@ -129,16 +129,16 @@
             <div class="row">
 
                 <div class="col-8 text-content">
-                    <h2>{{ __('index.27') }}</h2>
+                    <h2 data-aos="zoom-in" data-aos-duration="1000">{{ __('index.27') }}</h2>
                     <ul>
-                        <li><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.28') }}</li>
-                        <li><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.29') }}</li>
-                        <li><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.30') }}</li>
-                        <li><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.31') }}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000"><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.28') }}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000"><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.29') }}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000"><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.30') }}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000"><img src="{{ asset('img/bullet.png') }}" alt="bullet">{{ __('index.31') }}</li>
                     </ul>
                 </div>
 
-                <div class="col-4 image-content">
+                <div class="col-4 image-content" data-aos="zoom-out" data-aos-duration="1000">
                     <img src="{{ asset('img/targets-image.png') }}" alt="about-us">
                 </div>
             </div>
@@ -146,20 +146,20 @@
     </section>
     <section class="how-jana">
         <div class="container">
-            <div class="title"><h2>{{ __('index.32') }}</h2></div>
+            <div class="title" data-aos="zoom-in" data-aos-duration="1000"><h2>{{ __('index.32') }}</h2></div>
             <div class="boxes">
-                <div class="box box-1">
+                <div class="box box-1" data-aos="fade-up" data-aos-duration="1000">
                     <p>
                         {{ __('index.33') }}
                     </p>
                 </div>
-                <div class="box box-2">
+                <div class="box box-2" data-aos="fade-up" data-aos-duration="1000">
                     <p>
                         {{ __('index.34') }}
                     </p>
                 </div>
             </div>
-            <div class="boxes-1">
+            <div class="boxes-1" data-aos="fade-up" data-aos-duration="1000">
                 <div class="box">
                     <p>
                         {{ __('index.35') }}
@@ -167,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="boxes">
+            <div class="boxes" data-aos="fade-up" data-aos-duration="1000">
                 <div class="box box-1">
                     <p>
                         {{ __('index.36') }}
@@ -187,7 +187,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-7 col-10 text-content">
+                <div class="col-md-7 col-10 text-content" data-aos="fade-left" data-aos-duration="1000">
                     <h2>{{ __('index.38') }}</h2>
                     <p>
                         {{ __('index.39') }}
@@ -196,7 +196,7 @@
                     </p>
                 </div>
 
-                <div class="col-md-5 col-2 image-content">
+                <div class="col-md-5 col-2 image-content" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{ asset('img/services-image.png') }}" alt="services-us">
                 </div>
 
@@ -208,44 +208,44 @@
     <section class="investment" id="investments">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 image-content">
+                <div class="col-md-5 image-content" data-aos="fade-left" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image.png') }}" alt="investment">
                 </div>
-                <div class="col-md-7 text-content">
+                <div class="col-md-7 text-content" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image.png') }}" id="investment_mobile_image" alt="investment">
                     <h2>{{ __('index.41') }}</h2>
                     <p>{{ __('index.42') }} </p>
                     <p>{{ __('index.43') }}</p>
                 </div>
             </div>
-            <p>{{ __('index.44') }}</p>
+            <p data-aos="fade-up" data-aos-duration="1000">{{ __('index.44') }}</p>
         </div>
     </section>
 
     {{-- Our Success Investments --}}
     <section class="our-success-investments">
         <div class="container">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="1000">
                 <h2>{{ __('index.45') }}</h2>
             </div>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-1.png') }}" class="investment-logo" alt="investment-image-1">
                     <p> {{ __('index.53') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
-                <div class="card">
+                <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-2.png') }}" class="investment-logo"  alt="investment-image-2">
                     <p>{{ __('index.55') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
-                <div class="card">
+                <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-3.png') }}" class="investment-logo" alt="investment-image-3">
                     <p>{{ __('index.57') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
-                <div class="card">
+                <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-4.png') }}" class="investment-logo" alt="investment-image-4">
                     <p>{{ __('index.59') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
-                <div class="card">
+                <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-5.png') }}" class="investment-logo" alt="investment-image-5">
                     <p>{{ __('index.61') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>

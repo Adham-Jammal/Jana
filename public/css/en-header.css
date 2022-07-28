@@ -50,12 +50,12 @@
   .content .logo::after{
     content: '';
     height: 0.01rem;
-    width: 180px;
+    width: 150px;
     background: var(--white);
     position: absolute;
     display: block;
     z-index: -1;
-    right: -150%;
+    right: -110%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -73,7 +73,7 @@
   }
 
   .content .logo a img{
-    width: 140px;
+    width: 180px;
     background: #6b6460;
   }
   .header-fix .content .logo a{
@@ -360,3 +360,23 @@
     }
   }
 
+  /*Scroll Top*/
+  #scroll_top{
+    position: fixed;
+    right: -60px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 800;
+    transform: rotate(90deg);
+    transition: 1s;
+}
+#scroll_top:hover{
+    background-color: #025F4E;
+}

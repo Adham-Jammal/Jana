@@ -1,7 +1,9 @@
 let preloader = document.getElementById("preloader");
 if (preloader) {
     window.addEventListener("load", () => {
-        preloader.remove();
+        preloader.style.transition = '.5s';
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
     });
 }
 
@@ -48,3 +50,18 @@ $(".owl-carousel").owlCarousel({
     },
   });
 
+  let scrollTopButton = document.getElementById("scroll_top");
+  window.onscroll = () => {
+      if (scrollY >= 430) {
+          scrollTopButton.style = "right: 10px;transform: rotate(0deg);";
+      } else {
+          scrollTopButton.style = "right: -60px;";
+      }
+  };
+  scrollTopButton.onclick = function()
+  {
+      window.scrollTo({
+          top : 0 ,
+          behavior : "smooth"
+
+      })}

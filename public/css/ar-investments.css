@@ -39,7 +39,8 @@
     border: 3px solid #025F4E;
 }
 .our-success-investments .card p{
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     line-height: 1.8;
     margin-top: 15px;
     font-size: 1.4rem;
