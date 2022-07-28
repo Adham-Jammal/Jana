@@ -6,7 +6,7 @@ $lang2 = LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
     <nav id="main_nav" class="container">
         <input type="checkbox" id="show-search">
         <input type="checkbox" id="show-menu">
-        <label for="show-menu" class="menu-icon"><a href="/"><img src="{{ asset('img/mobile-logo.svg') }}"
+        <label for="show-menu" class="menu-icon"><a href="/"><img src="{{ asset('img/header-logo.svg') }}"
                     id="mobile_header_logo" alt="Logo"></a></a><img src="{{ asset('img/burger.png') }}"
                 class="burger" alt="burger"></a></label>
 
