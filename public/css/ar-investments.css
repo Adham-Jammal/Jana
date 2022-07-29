@@ -66,6 +66,9 @@
     margin-right: 10px;
     clear: both;
 }
+.investment{
+    padding: 25px 0;
+}
 .investment p{
     font-size: 1.2rem;
     margin-top: 0;

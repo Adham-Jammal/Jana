@@ -4,6 +4,7 @@ return [
     "1" => "Home" ,
     "2" => "About us" ,
     "3" => "investments" ,
+    "3.2" => "companies" ,
     "4" => "Services" ,
     "5" => "News" ,
     "6" => "Gallery" ,

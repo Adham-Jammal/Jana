@@ -219,11 +219,13 @@
                 </div>
             </div>
             <p data-aos="fade-up" data-aos-duration="1000">{{ __('index.44') }}</p>
+            <div class="title"><h2>{{ __('index.41') }}</h2></div>
+            <img src="{{ asset('img/investment-image-4.png') }}" class="investment-image" alt="investment-image-4">
         </div>
     </section>
 
     {{-- Our Success Investments --}}
-    <section class="our-success-investments">
+    <section class="our-success-investments" id="companies">
         <div class="container">
             <div class="title" data-aos="fade-up" data-aos-duration="1000">
                 <h2>{{ __('index.45') }}</h2>

@@ -149,6 +149,7 @@
     position: absolute;
 }
 .about-us .text-content p{
+    text-align: justify;
     color: #6E6E6E;
     margin-top: 25px;
     font-size: 1.6rem;
@@ -186,6 +187,7 @@
     position: absolute;
 }
 .vision-message .text-content p{
+    text-align: justify;
     color: #6E6E6E;
     font-size: 1.6rem;
     margin-bottom: 75px;
@@ -232,6 +234,7 @@
     position: absolute;
 }
 .values .text-content p{
+    text-align: justify;
     color: #6E6E6E;
     margin-top: 25px;
     font-size: 1.6rem;
@@ -248,7 +251,7 @@
     justify-content: center;
 }
 .targets .image-content img{
-    width: 60%;
+    width: 90%;
 }
 .targets .text-content h2{
     margin-bottom: 30px;
@@ -388,6 +391,7 @@
     position: absolute;
 }
 .services .text-content p{
+    text-align: justify;
     color: #6E6E6E;
     margin-top: 25px;
     font-size: 1.6rem;
@@ -400,6 +404,9 @@
     padding: 50px 0;
     background-position: center;
     background-size: contain;
+}
+.investment p {
+    text-align: justify;
 }
 .investment .image-content img{
     transform: scaleX(-1);
@@ -432,6 +439,37 @@
     color: #6E6E6E;
     margin-top: 25px;
     font-size: 1.6rem;
+}
+.investment .title{
+    margin: 50px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.investment .title h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--main-color);
+    border-bottom: 2px solid #025F4E;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+.investment .title h2::before{
+    content: '';
+    width: 20px;
+    background-color: transparent;
+    border-left: 5px solid var(--white);
+    border-right: 5px solid var(--white);
+    height: 2px;
+    left: 10px;
+    bottom: -2px;
+    position: absolute;
+}
+.investment .investment-image{
+    display: block;
+    margin: 0 auto;
 }
 
 /* Our Success Investment */
@@ -492,13 +530,14 @@
     border: 3px solid #025F4E;
 }
 .our-success-investments .card p{
+    text-align: justify;
     margin-top: 37px;
     font-size: 1.4rem;
     font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 .our-success-investments .card a{
@@ -672,6 +711,12 @@
 .investment p{
     font-size: 1.2rem;
     margin-top: 0;
+}
+.our-success-investments{
+    padding: 25px 0;
+}
+.our-success-investments .title{
+    margin-bottom: 25px;
 }
 .our-success-investments .card{
     position: relative;

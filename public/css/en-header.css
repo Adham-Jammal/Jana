@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     margin: 0 auto;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     align-items: center;
     justify-content: space-between;
   }
@@ -50,12 +50,12 @@
   .content .logo::after{
     content: '';
     height: 0.01rem;
-    width: 150px;
+    width: 120px;
     background: var(--white);
     position: absolute;
     display: block;
     z-index: -1;
-    right: -110%;
+    right: -100%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -73,7 +73,7 @@
   }
 
   .content .logo a img{
-    width: 180px;
+    width: 155px;
     background: #6b6460;
   }
   .header-fix .content .logo a{
@@ -108,7 +108,7 @@
   .content .links li label{
     position: relative;
     color: white!important;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 100;
     padding: 25px 18px;
     transition: all 0.3s ease;

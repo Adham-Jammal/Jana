@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     margin: 0 auto;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     align-items: center;
     justify-content: space-between;
   }
@@ -50,12 +50,12 @@
   .content .logo::after{
     content: '';
     height: 0.01rem;
-    width: 180px;
+    width: 150px;
     background: var(--white);
     position: absolute;
     display: block;
     z-index: -1;
-    left: -150%;
+    left: -120%;
     top: 50%;
     transform: translateY(-50%);
   }

@@ -19,9 +19,10 @@ $lang2 = LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
         <div class="content">
             <ul class="links">
                 <li> <a href="/">{{ __('index.1') }}</a> </li>
-                <li> <a data-link="#about_us">{{ __('index.2') }}</a></li>
-                <li> <a data-link="#investments">{{ __('index.3') }}</a></li>
                 <li> <a data-link="#services">{{ __('index.4') }}</a></li>
+                <li> <a data-link="#investments">{{ __('index.3') }}</a></li>
+                <li> <a data-link="#companies">{{ __('index.3.2') }}</a></li>
+                <li> <a data-link="#about_us">{{ __('index.2') }}</a></li>
                 <li> <a data-link="#news">{{ __('index.5') }}</a></li>
                 <li> <a data-link="#gallery">{{ __('index.6') }}</a></li>
                 <li> <a href="/contact-us">{{ __('index.7') }}</a></li>
