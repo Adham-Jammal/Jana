@@ -220,7 +220,7 @@
             </div>
             <p data-aos="fade-up" data-aos-duration="1000">{{ __('index.44') }}</p>
             <div class="title"><h2>{{ __('index.41') }}</h2></div>
-            <img src="{{ asset('img/investment-image-4.png') }}" class="investment-image" alt="investment-image-4">
+            <img src="{{ asset('img/investment-image-4.svg') }}" class="investment-image" alt="investment-image-4">
         </div>
     </section>
 
@@ -231,25 +231,25 @@
                 <h2>{{ __('index.45') }}</h2>
             </div>
             <div class="cards">
-                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
-                    <img src="{{ asset('img/investment-image-1.png') }}" class="investment-logo" alt="investment-image-1">
-                    <p> {{ __('index.53') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
-                </div>
-                <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
-                    <img src="{{ asset('img/investment-image-2.png') }}" class="investment-logo"  alt="investment-image-2">
-                    <p>{{ __('index.55') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
-                </div>
                 <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-3.png') }}" class="investment-logo" alt="investment-image-3">
                     <p>{{ __('index.57') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
-                    <img src="{{ asset('img/investment-image-4.png') }}" class="investment-logo" alt="investment-image-4">
-                    <p>{{ __('index.59') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
+                    <img src="{{ asset('img/investment-image-2.png') }}" class="investment-logo"  alt="investment-image-2">
+                    <p>{{ __('index.55') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="{{ asset('img/investment-image-1.png') }}" class="investment-logo" alt="investment-image-1">
+                    <p> {{ __('index.53') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
                 <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
                     <img src="{{ asset('img/investment-image-5.png') }}" class="investment-logo" alt="investment-image-5">
                     <p>{{ __('index.61') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="{{ asset('img/investment-image-1.png') }}" class="investment-logo" alt="investment-image-1">
+                    <p> {{ __('index.53.1') }}</p><a href="/investments">{{ __('index.51') }} <img src="{{ asset('img/arrow.svg') }}" alt="Arrow"></a>
                 </div>
             </div>
         </div>
