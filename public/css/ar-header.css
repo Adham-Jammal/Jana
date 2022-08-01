@@ -1,6 +1,6 @@
 .wrapper{
     font-family:"Noto Kufi Arabic";
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     background: #6b6460;
     width: 100%;
@@ -246,11 +246,15 @@
         justify-content: space-between;
         }
         .wrapper .menu-icon img{
+            position: relative;
+            top: 10px;
             width: 150px;
         }
         .wrapper .menu-icon .burger{
             width: 25px;
             transform: scaleX(-1);
+            position: relative;
+            top: 0px;
         }
         nav .content .links::before{
             display: none;
@@ -274,12 +278,13 @@
     }
     nav #show-menu:checked ~ .content .links{
       background-color:#6b6460;
-      top: 110px;
+      top: 69px;
       height: 100vh;
       right: 0%;
       z-index: 3;
     }
     .content .links li{
+        height: 65px;
       margin: 15px 20px;
     }
     .content .links li a,

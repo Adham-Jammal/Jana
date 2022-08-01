@@ -10,6 +10,7 @@
     position: relative;
 }
 .carousel-item{
+    margin-top: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,11 +463,12 @@
     border-left: 5px solid var(--white);
     border-right: 5px solid var(--white);
     height: 2px;
-    left: 10px;
+    right: 10px;
     bottom: -2px;
     position: absolute;
 }
 .investment .investment-image{
+    width: 40%;
     display: block;
     margin: 0 auto;
 }
@@ -573,6 +575,7 @@
         margin-bottom: -80px;
     }
     .carousel-item{
+        margin-top: 70px;
         background-size: cover;
         background-position-x: left;
     }
@@ -714,7 +717,7 @@
     margin-top: 0;
 }
 .investment .investment-image{
-    width: 100%;
+    width: 60%;
 }
 .our-success-investments{
     padding: 25px 0;
